@@ -1,0 +1,85 @@
+@keyframes turnAround {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes turnAround {
+    from {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+#clock-div {
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+
+#center-div {
+    border-radius: 5px;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 103px;
+    left: 103px;
+    background-color: black;
+}
+
+#second-div {
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    top: 105.5px;
+    left: 108px;
+    background-color: orangered;
+    transform-origin: left center;
+    -webkit-transform-origin: left center;
+    /*transition-duration: 1s;*/
+    /*transition-property: transform;*/
+    /*transition-timing-function: linear;*/
+    /*-webkit-transform: rotate(0deg);*/
+    /*-moz-transform: rotate(0deg);*/
+    /*-ms-transform: rotate(0deg);*/
+    /*-o-transform: rotate(0deg);*/
+    /*transform: rotate(0deg);*/
+    /*-webkit-animation:turnAround 60s linear 0s infinite normal running;*/
+    /*-o-animation:turnAround 60s linear 0s infinite normal running;*/
+    /*animation:turnAround 60s linear 0s infinite normal running;*/
+}
+
+#min-div {
+    position: absolute;
+    width: 80px;
+    height: 5px;
+    top: 105.5px;
+    left: 108px;
+    background-color: black;
+    transform-origin: left center;
+    -webkit-transform-origin: left center;
+}
+#hour-div {
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    top: 105.5px;
+    left: 108px;
+    background-color: black;
+    transform-origin: left center;
+    -webkit-transform-origin: left center;
+}
